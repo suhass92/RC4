@@ -2,6 +2,7 @@
 #author = "raviteja buddi"
 import time
 start_time = time.clock()
+timelist = []
 def random(ab):
 	f = "This is my plaintext"
 	g = len(f)
@@ -16,7 +17,9 @@ def random(ab):
 		p = ab[(ab[i] + ab[j]) % 256]
 		k.append(p)
 		g-=1
-	print("---%s seconds ---" % (time.clock() - start_time))
+	#print("---%s seconds ---" % (time.clock() - start_time))
+	t = ("---%s seconds ---" % (time.clock() - start_time))
+	timelist.append(t)
 	m = len(k)
 	for h in range(0,m):
 		x = bin(k[h])[2:].zfill(8)
@@ -24,3 +27,5 @@ def random(ab):
 	n = y[1:]
 	print('The key stream is :\n')
 	print(n)
+def printtime(inp):
+	print timelist[inp]	
