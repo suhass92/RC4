@@ -28,4 +28,4 @@ def random(ab):
 	print('The key stream is :\n')
 	print(n)
 def printtime(inp):
-	print timelist[inp]	
+	print (timelist[inp])

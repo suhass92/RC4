@@ -14,6 +14,6 @@ for lin in f:
 
 for i in range(0, len(keysizes)-1):
  noofbytes = (len(keysizes[i]) -1) * 8
- print str(noofbytes) + " bits"
+ print (str(noofbytes) + " bits")
  PRGA.printtime(i)	
- print "---------------------------------------------"	
+ print ("---------------------------------------------"	)
