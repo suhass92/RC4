@@ -24,7 +24,6 @@ for i in range(0, len(keysizes)):
 t = PRGA.getTime()
 #for i in range(0, len(t)-1):
 #	print (str(sizelist[i]) + str(t[i]) )
-#print len(sizelist)
-#print len(t)
+
 plot.plotgraph(sizelist, t)
 
