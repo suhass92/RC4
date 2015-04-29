@@ -19,7 +19,8 @@ def random(ab):
 		g-=1
 	#print("---%s seconds ---" % (time.clock() - start_time))
 	t = ("---%s seconds ---" % (time.clock() - start_time))
-	timelist.append(t)
+	t1 = (time.clock() - start_time)
+	timelist.append(float(t1))
 	m = len(k)
 	for h in range(0,m):
 		x = bin(k[h])[2:].zfill(8)
@@ -29,3 +30,5 @@ def random(ab):
 	print(n)
 def printtime(inp):
 	print (timelist[inp])
+def getTime():
+	return timelist
